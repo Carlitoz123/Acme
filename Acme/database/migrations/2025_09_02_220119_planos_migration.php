@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name_plano');
             $table->string('archivo_pdf');
-            $table->datetime('fecha_subida');
-            $table->datetime('fecha_actualizacion');
+            $table->string('fecha_subida');
+            $table->string('fecha_actualizacion');
             $table->string('version');
             $table->timestamps();
         });

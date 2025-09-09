@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('projets', function (Blueprint $table) {
+        Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('name_projects');
             $table->string('direccion');
             $table->foreignId('zona_id')->constrained('zona');
             $table->foreignId('planos_id')->constrained('planos');
-            $table->datetime('fecha_inicio');
-            $table->datetime('fecha_final');
+            $table->string('fecha_inicio');
+            $table->string('fecha_final');
             $table->timestamps();
         });
     }
